@@ -1,0 +1,80 @@
+@import "../../sass/responsivness.scss";
+
+.mainContainer {
+  background-color: #f8faff;
+  width: 100%;
+  padding: 20px 15px;
+  .textContainerForSignIn {
+    margin-top: 30px;
+    @include media-min-lg-x {
+      margin-top: 0;
+    }
+    .signInText {
+      color: #000000;
+      font-size: 15px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-bottom: 10px;
+    }
+    .signInToYourAccount {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      font-family: "Lato", sans-serif;
+      @include media-min-lg-x {
+        font-size: 13px;
+      }
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 30px 0;
+    .btnContainerStyle {
+      background-color: var(--WHITE);
+      width: 48%;
+      padding: 9px 10px;
+      border-radius: 8px;
+    }
+    .styleForIconButton {
+      font-size: 9px;
+      font-weight: 400;
+      color: #858585;
+      @include media-min-lg {
+        font-size: 12px;
+      }
+    }
+    .iconStyle {
+      margin-right: 15px;
+    }
+  }
+  .formContainer {
+    background-color: white;
+    padding: 25px 18px;
+    border-radius: 8px;
+    .forgotPasswordText {
+      color: #346bd4;
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      margin: 20px 0;
+      @include media-min-lg {
+        font-size: 16px;
+      }
+    }
+    .btnSignButtonContainer {
+      background-color: var(--PRIMARY_COLOR);
+      padding: 13px 10px;
+      border-radius: 10px;
+    }
+    .signInButtonText {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: var(--WHITE);
+    }
+  }
+}

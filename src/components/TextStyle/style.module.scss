@@ -1,0 +1,11 @@
+@import "../../sass/responsivness.scss";
+
+.textStyle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: "Lato", sans-serif;
+  @include media-min-xl {
+    font-size: 16px;
+  }
+}

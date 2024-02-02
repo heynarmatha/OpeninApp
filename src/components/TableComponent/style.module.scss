@@ -1,0 +1,70 @@
+/* Table.scss */
+.mainContainer {
+  // width: 250px;
+  width: 100%;
+  // height: 360px;
+
+  overflow: scroll;
+  table {
+    border-collapse: separate !important;
+    border-spacing: 0 1em !important;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    thead {
+      background-color: #f5f5f5 !important;
+    }
+  }
+  .customTableContainer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    border-collapse: collapse;
+
+    th {
+      padding: 8px 10px 8px 5px;
+      text-align: left;
+      font-family: "Figtree", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      font-size: 14px;
+    }
+    tbody tr {
+      // border: 1px solid var(--BORDER_COLOR_GREY);
+      // display: flex;
+      margin: 8px 10px 8px 5px;
+      // background-color: white;
+      // border-spacing: unset;
+      // border-radius: 8px;
+      background-color: #fff;
+      border-radius: 8px !important;
+    }
+
+    td {
+      padding: 8px 10px 10px 5px;
+      // border: 1px solid #ddd;
+      padding: 15px 8px;
+      margin-bottom: 15px !important;
+      // border-radius: 8px;
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      min-width: 130px;
+    }
+    th {
+      min-width: 100px;
+    }
+    td:nth-child(2) {
+      color: #5b93ff;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    tr {
+      border-radius: 10px; /* Set the border-radius value as per your preference */
+      overflow: hidden; /* Ensure that the border-radius is applied correctly */
+    }
+  }
+}

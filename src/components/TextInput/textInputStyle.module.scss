@@ -1,0 +1,66 @@
+@import "../../sass/responsivness.scss";
+
+// InputField.scss
+.inputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .textContainer {
+    margin-bottom: 8px;
+  }
+  .textStyle {
+    font-size: 11px;
+    @include media-min-sm {
+      font-size: 12px;
+    }
+
+    @include media-min-xl {
+      font-size: 11px;
+    }
+  }
+
+  .inputField {
+    padding: 14px 8px;
+    background-color: #eaeaea;
+    border-radius: 6px;
+    outline: none;
+    display: flex;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    font-weight: 500;
+    font-size: 11px;
+    background-color: #eaeaea;
+    @include media-min-sm {
+      font-size: 11px;
+    }
+  }
+  input::placeholder {
+    font-size: 11px;
+    @include media-min-sm {
+      font-size: 10px;
+    }
+  }
+
+  .errorMessage {
+    color: var(--ERROR_MESSAGE_COLOR);
+    font-size: 10px;
+    margin-top: 6px;
+    @include media-min-sm {
+      font-size: 11px;
+    }
+  }
+  .togglePasswordButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #eaeaea inset !important;
+    // -webkit-text-fill-color: #eaeaea !important;
+  }
+}
