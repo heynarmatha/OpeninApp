@@ -1,10 +1,12 @@
 import React from "react";
-import LoginScreen from "./screens/loginScreen";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //assets
-
 import { PRIVATE_ROUTE_URL, PUBLIC_ROUTE_URL } from "./routes/variable";
+import LoginScreen from "./screens/loginScreen";
+
+//components
+
 import AppLayout from "./components/AppLayout";
 import AppLayoutForMainScreen from "./components/AppLayoutForMain";
 import UploadCSVScreen from "./screens/UploadCsvScreen";

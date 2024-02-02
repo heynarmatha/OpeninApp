@@ -1,13 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
-import { EXCEL_ICON, UPLOAD_ICON } from "../../assets/Images";
-import useDragAndDrop from "./hooks/useDragAndDrop";
-import styles from "./style.module.scss";
 import Papa from "papaparse";
 import axios from "axios";
+
+//assets and images
+import { EXCEL_ICON, UPLOAD_ICON } from "../../assets/Images";
+import { ReactComponent as YourSvg } from "../../assets/Images/close.svg";
+import styles from "./style.module.scss";
+
+//components
+import useDragAndDrop from "./hooks/useDragAndDrop";
 import Loader from "../../components/Loader/loader";
 import TableComponent from "../../components/TableComponent/table";
 import Dropdown from "../../components/Dropdown/dropdown";
-import { ReactComponent as YourSvg } from "../../assets/Images/close.svg";
+
 function UploadCSVScreen() {
   const {
     dragOver,
@@ -100,16 +105,6 @@ function UploadCSVScreen() {
       setFileDropError("Please Upload CSV file");
     }
   };
-
-  console.log("file", file);
-  console.log("csvData", csvData);
-  console.log("tagData", tagData);
-
-  // const onSelectedTags = (values: any, row: any, index: number) => {
-  //   console.log("values", values);
-  //   setTagData((pre: any) => [...pre, { ...values }]);
-  //   row[index]["selected tags"] = [...pre, { ...values }];
-  // };
 
   const onSelectedTags = (selectedTag: any, row: any, index: number) => {
     console.log("selectedTag", selectedTag);

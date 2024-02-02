@@ -1,11 +1,15 @@
 import { useState } from "react";
-import { APPLE_ICON, GOOGLE_ICON } from "../../assets/Images";
-import CustomButton from "../../components/Button/button";
-import styles from "./style.module.scss";
-import InputField from "../../components/TextInput/textInput";
-import { INPUT_DATA_VALIDATION } from "../../Utility/validation";
 import { useNavigate } from "react-router-dom";
+
+//assets and images
+import { APPLE_ICON, GOOGLE_ICON } from "../../assets/Images";
+import { INPUT_DATA_VALIDATION } from "../../Utility/validation";
 import { PRIVATE_ROUTE_URL } from "../../routes/variable";
+import styles from "./style.module.scss";
+
+//components
+import CustomButton from "../../components/Button/button";
+import InputField from "../../components/TextInput/textInput";
 
 const LoginScreen = () => {
   const navigate = useNavigate();
@@ -48,10 +52,6 @@ const LoginScreen = () => {
     }
     setPasswordError("");
     return true;
-  };
-
-  const onNavigateForgotPasswordScreen = () => {
-    console.log("navigate to forgot password");
   };
 
   const onHandleForSignIn = () => {
@@ -109,10 +109,7 @@ const LoginScreen = () => {
           />
         </div>
 
-        <div
-          onClick={() => onNavigateForgotPasswordScreen()}
-          style={{ cursor: "pointer" }}
-        >
+        <div style={{ cursor: "pointer" }}>
           <h5 className={styles.forgotPasswordText}>Forgot password?</h5>
         </div>
         <div>

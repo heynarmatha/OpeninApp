@@ -1,9 +1,6 @@
 @import "../../sass/responsivness.scss";
 
 .containerForUpload {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   padding: 20px 15px;
   .subContainer {
     margin-top: 30px;
@@ -81,9 +78,7 @@
     }
 
     label h1 {
-      // font-size: 130%;
       text-align: center;
-      // color: #EBEBEB;
     }
 
     .flex_style {

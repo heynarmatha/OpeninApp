@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
+
+//assets and images
 import {
   CALENDER,
   DASHBOARD,
@@ -14,9 +16,10 @@ import {
   UPLOAD,
 } from "../../assets/Images";
 import { PRIVATE_ROUTE_URL } from "../../routes/variable";
-import Modal from "../Modal/modal";
 import styles from "./style.module.scss";
 
+//components
+import Modal from "../Modal/modal";
 interface SidebarItem {
   title: string;
   icon?: string;

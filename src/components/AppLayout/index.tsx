@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
+
+//assets and images
 import {
   BASE_LOGO_WHITE,
   BASE_LOGO_WHITE_WINDOW,
@@ -67,8 +69,6 @@ const AppLayout = ({ children }: any) => {
       </div>
     );
   };
-
-  console.log("windowSize", windowSize);
 
   return (
     <div className={styles.layoutContainer}>
