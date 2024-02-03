@@ -287,7 +287,7 @@ function UploadCSVScreen() {
                       style={{ display: "flex", alignItems: "center" }}
                     >
                       {windowSize <= 1023
-                        ? "Upload your excel sheet here"
+                        ? "Upload your excel sheet"
                         : " Drop your excel sheet here or"}
 
                       <label htmlFor="file">
